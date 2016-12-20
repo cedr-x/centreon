@@ -60,6 +60,8 @@ class DowntimeStartAndStopContext extends CentreonContext
         $this->submitServiceResult($this->host, $this->service, 0, __FUNCTION__);
     }
 
+
+
     /**
      * @Given a fixed downtime on a monitored element
      */
