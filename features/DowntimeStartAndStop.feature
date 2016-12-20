@@ -7,11 +7,11 @@ Feature: Downtime start and stop
     Given I am logged in a Centreon server
     And a passive service is monitored
 
-  Scenario: Configure downtime
-    Given a downtime in configuration of a user in other timezone
-    When I save a downtime
-    Then the downtime start and end uses host timezone
-
+#  Scenario: Configure downtime
+#    Given a downtime in configuration of a user in other timezone
+#    When I save a downtime
+#    Then the downtime start and end uses host timezone
+#
 #  Scenario: Start of fixed downtime
 #    Given a fixed downtime on a monitored element
 #    When the downtime period is started
@@ -34,8 +34,8 @@ Feature: Downtime start and stop
 #    And the flexible downtime is started
 #    When the downtime duration is finished
 #    Then the downtime is stopped
-#
-#  Scenario: Configure recurrent downtime
-#    Given a recurrent downtime on an other timezone service
-#    When this one gives a downtime
-#    Then the downtime start and end uses host timezone
+
+  Scenario: Configure recurrent downtime
+    Given a recurrent downtime on an other timezone service
+    When this one gives a downtime
+    Then the downtime start and end uses host timezone
